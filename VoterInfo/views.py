@@ -1,4 +1,4 @@
-# pages/views.py
+# VoterInfo/views.py
 from django.views.generic import TemplateView
 
 class HomePageView(TemplateView):

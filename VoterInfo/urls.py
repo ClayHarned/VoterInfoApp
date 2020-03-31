@@ -1,4 +1,4 @@
-# pages/urls.py
+# VoterInfo/urls.py
 from django.urls import path
 from .views import HomePageView, AboutPageView
 
