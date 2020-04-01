@@ -1,8 +1,20 @@
 # VoterInfo/views.py
 from django.views.generic import TemplateView
 
-class HomePageView(TemplateView):
-    template_name = 'home.html'
+class MyInfoPageView(TemplateView):
+    template_name = 'MyInfo.html'
 
-class AboutPageView(TemplateView):
-    template_name = 'about.html'
+class NextElectionPageView(TemplateView):
+    template_name = 'NextElection.html'
+
+class CurrentSeatsPageView(TemplateView):
+    template_name = 'CurrentSeats.html'
+
+class PolitionProfilesPageView(TemplateView):
+    template_name = 'PolitionProfiles.html'
+
+class VotingStatisticsPageView(TemplateView):
+    template_name = 'VotingStatistics.html'
+
+class VotingQuestionsAndTipsPageView(TemplateView):
+    template_name = 'VotingQuestionsAndTips.html'

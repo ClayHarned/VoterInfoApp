@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'VoterInfo'
+    'VoterInfo',
+    'bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'VoterInfoApp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [(os.path.join(BASE_DIR, 'templates')), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,6 +68,8 @@ TEMPLATES = [
         },
     },
 ]
+
+BOOTSTRAP4 = { 'include_jquery': True }
 
 WSGI_APPLICATION = 'VoterInfoApp.wsgi.application'
 
