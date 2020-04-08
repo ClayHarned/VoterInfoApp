@@ -1,0 +1,45 @@
+<!-- templates/base.html -->
+{% extends 'bootstrap.html' %}
+
+{% load bootstrap4 %}
+
+{% block bootstrap4_content %}
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="{% url 'MyInfo' %}"><button type="button" class="btn btn-outline-dark">MyInfo</button></a>
+
+      <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'NextElection' %}"><button type="button" class="btn btn-outline-dark">NextElection</button></a>
+      </div>
+
+      <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'CurrentSeats' %}"><button type="button" class="btn btn-outline-dark">CurrentSeats</button></a>
+      </div>
+
+      <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'PolitionProfiles' %}"><button type="button" class="btn btn-outline-dark">PolitionProfiles</button></a>
+      </div>
+
+      <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'VotingStatistics' %}"><button type="button" class="btn btn-outline-dark">VotingStatistics</button></a>
+      </div>
+
+      <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'VotingQuestionsAndTips' %}"><button type="button" class="btn btn-outline-dark">VotingQuestionsAndTips</button></a>
+      </div>
+
+    </nav>
+
+    <div class="container">
+
+        {% autoescape off %}{% bootstrap_messages %}{% endautoescape %}
+
+        {% block content %}(no content){% endblock %}
+    </div>
+
+{% endblock %}
