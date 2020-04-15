@@ -38,9 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'VoterInfo',
+    'users',
+    'profiles',
     'bootstrap4',
     'api',
 ]
+
+AUTH_USER_MODEL = 'users.Customuser'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [

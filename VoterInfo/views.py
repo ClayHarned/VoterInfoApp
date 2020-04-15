@@ -10,8 +10,8 @@ class NextElectionPageView(TemplateView):
 class CurrentSeatsPageView(TemplateView):
     template_name = 'CurrentSeats.html'
 
-class PolitionProfilesPageView(TemplateView):
-    template_name = 'PolitionProfiles.html'
+class PoliticianProfilesPageView(TemplateView):
+    template_name = 'PoliticianProfiles.html'
 
 class VotingStatisticsPageView(TemplateView):
     template_name = 'VotingStatistics.html'

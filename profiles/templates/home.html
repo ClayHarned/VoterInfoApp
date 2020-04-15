@@ -1,0 +1,11 @@
+<!-- tweets/templates/home.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for tweet in object_list %}
+    <div class="profile_entry">
+    <h4>{{ profile.body }}</h4>
+    <p>{{ profile.user }}</p>
+    </div>
+  {% endfor %}
+{% endblock content %}
